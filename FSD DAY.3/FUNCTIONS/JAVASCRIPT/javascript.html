@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    /*ARRAYS
+    Arrays are ordered collections of data. They can hold multiple values under
+    a single variable name, and the values can be of different data types.
+    */
+       //TRAVERSAL OF ARRAYS 
+            //using for loop
+            // let arr = [1, 2, 3, 4, 5];
+            // for(let i=0;i<=arr.length-1;i++){
+            //     document.writeln(arr[i]+"")
+            // }
+            // // using for each loop
+            // let arr1=['m','c','e','t'];
+            // arr1.forEach(function(data){
+            //     document.writeln(data);
+            // });
+            
+            // // using for of loop
+            // let arr2=[11,12,13,14];
+            // result=""
+            // for(let data of arr2){
+            //     result+=data+1
+            // }
+            // document.writeln(result + "<br>");           
+            //  // using map method
+            // let arr3=[1,2,3,4,5];
+            // let mul=arr3.map(function(num){
+            //     return num*2;
+            // })
+            
+            // document.writeln(mul)
+            // practice other ways lik while, do-while, for in etc..
+
+        // Methods used in arrays 
+        //PUSH():Adds one or more elements to the end of an array.
+        let a=[1,3]
+        a.push(4)
+        console.log(a)
+
+
+        let mcet=[12,23,4,5,6]
+        mcet.push(7)
+        mcet.push('a')
+        mcet.push('@')
+        mcet.pop()
+        mcet.shift()
+        mcet.unshift(12)
+        let mcet1= mcet.slice(1,3)
+        mcet.splice(1,3,'a','b')
+        document.write(mcet+"<br>")
+
+        document.write(mcet1)
+        //POP():Removes the last element from an array and returns it.
+        let b=[1,2,4]
+        b.pop(2)
+        console.log(b)
+        //shift():Removes the first element from an array and returns it.
+        let c = ['a', 'b', 'c'];
+        let first = c.shift();
+        console.log(first)
+        //unshift(): Adds one or more elements to the beginning of an array.
+        let d=['b','c']
+        d.unshift('a')
+        console.log(d)
+        //slice():Creates a new array by extracting a portion of an existing array.
+        let e=[1,2,3,4,5]
+        let ae=e.slice(1,2)
+        console.log(ae)
+        //splice(): Adds or removes elements from a specific index.
+        let f=[1,2,3,4,5,6]
+        f.splice(1,3,'a','b')
+        console.log(f)
+         //map(): Creates a new array with the results of calling a provided function on every element.
+         let g = [1, 2, 3];
+        let map = g.map(n => n + 2);
+        console.log(map);
+        //filter(): Creates a new array with all elements that pass the test implemented by the provided function.
+        let h=[1, 2, 3];
+        let filter = g.map(n => n < 2);
+        console.log(filter);
+
+        // like this we have many more methods that can be researched by you self
+
+    </script> 
+     
+</head>
+<body>
+    
+</body>
+</html>
